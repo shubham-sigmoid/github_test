@@ -14,4 +14,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.0
       - run: echo "🍏 This job's status is ${{ job.status }}."
